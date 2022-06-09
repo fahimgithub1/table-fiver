@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fiver Table</title>
+
+        <style>
+            h1,h4{
+                margin: auto;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            table, tr, th, td{
+                border: 1px solid black;
+            }
+
+            .tr1{
+                background-color: rgb(52, 220, 40);
+            }
+
+            .tr2{
+                background-color: rgb(208, 220, 40);
+            }
+
+            tr:active{
+                background-color: rgb(113, 95, 131);
+            }
+        </style>
+    </head>
+    <body>
+        
+        <h1>This is working on every row</h1>
+        <h4>In this way you can set link every row</h4>
+        <!-- 
+                            for row 
+            in this way you can set link every row
+        -->
+        <table style="margin: auto;">
+            
+            <!-- 
+                            if you don't want to set any target
+                            ***********************************
+                <tr onclick= "location.href='https://www.fiverr.com/share/qqmGgp' "> 
+                    <td >Alfreds Futterkiste</td>
+                    <td >Maria Anders</td>
+                    <td>Germany</td>
+                </tr>
+            -->
+
+            <!-- 
+                            if you want to set any target
+            -->
+            <tr class="tr1" onclick= "window.open('https://www.daraz.com.bd/', '_blank')">
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            
+            <tr class="tr1"  onclick= "window.open('https://www.daraz.com.bd/', '_blank')"> 
+                <td >Alfreds Futterkiste</td>
+                <td >Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            
+            <tr class="tr1"  onclick= "window.open('https://www.daraz.com.bd/', '_blank')">
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+            
+        </table>
+
+        <br><br>
+        <h1>This is working on every column</h1>
+        <h4>In this way you can set link every collumn</h4>
+        <!--            
+                            for column  
+             in this way you can set link every collumn
+        -->
+        <table style="margin: auto;">
+            
+            <!-- 
+                            if you don't want to set any target
+                            ***********************************
+                <tr> 
+                    <td onclick= "location.href='https://www.fiverr.com/share/qqmGgp' ">Alfreds Futterkiste</td>
+                    <td onclick= "location.href='https://www.fiverr.com/share/qqmGgp' ">Maria Anders</td>
+                    <td onclick= "location.href='https://www.fiverr.com/share/qqmGgp' ">Germany</td>
+                </tr>
+            -->
+
+            <!-- 
+                            if you want to set any target
+            -->
+            <tr class="tr2">
+                <th onclick= "window.open('https://www.alibaba.com/share/qqmGgp', '_blank')">
+                    Company2
+                </th>
+                <th onclick= "window.open('https://www.alibaba.com/share/qqmGgp', '_blank')">
+                    Contact2
+                </th>
+                <th onclick= "window.open('https://www.alibaba.com/share/qqmGgp', '_blank')">
+                    Country2
+                </th>
+            </tr>
+            
+            <tr class="tr2"> 
+                <td onclick= "window.open('https://www.alibaba.com/share/qqmGgp', '_blank')">
+                    Alfreds Futterkiste2
+                </td>
+                <td onclick= "window.open('https://www.alibaba.com/share/qqmGgp', '_blank')">
+                    Maria Anders2
+                </td>
+                <td onclick= "window.open('https://www.alibaba.com/share/qqmGgp', '_blank')">
+                    Germany2
+                </td>
+            </tr>
+            
+            <tr class="tr2">
+                <td onclick= "window.open('https://www.alibaba.com/share/qqmGgp', '_blank')">
+                    Centro comercial Moctezuma2
+                </td>
+                <td onclick= "window.open('https://www.alibaba.com/share/qqmGgp', '_blank')">
+                    Francisco Chang2
+                </td>
+                <td onclick= "window.open('https://www.alibaba.com/share/qqmGgp', '_blank')">
+                    Mexico2
+                </td>
+            </tr>
+            
+        </table>
+        
+    </body>
+</html>
+
